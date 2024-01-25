@@ -1,0 +1,272 @@
+html {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lustria', serif;
+  padding: 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+a {
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(255, 157, 44);
+}
+
+a:hover {
+  color: rgb(244, 203, 247);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+h1 > a {
+  font-size: 2rem;
+  color: rgb(7, 7, 7);
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+}
+
+.contheader {
+  height: 100px;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+header {
+  background-color: rgba(255, 255,255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header > h1 {
+  align-self: flex-start;
+  flex-basis: 50%;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header ul {
+  color: rgb(255, 203, 254);
+  flex-grow: 2;
+  flex-basis: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+header ul li a {
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  color: rgb(249, 217, 214);
+  cursor: pointer;
+}
+
+.contmain
+{
+  width: 100vw;
+}
+
+article {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#attivita {
+  background-image: url("./img/dennis-ottink-06jRcaY4wgg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+}
+
+#contatti {
+  background-image: url("./img/patrick-fore-0gkw_9fy0eQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+  padding-left: 30px;
+  text-align: left;
+}
+
+#contatti h2 {
+  color: rgb(252, 195, 195, 0.7);
+}
+
+#contatti p {
+  color: rgb(252, 195, 195, 0.7);
+  width: 50%;
+}
+
+#contchisono {
+  background-image: url("./img/sebastien-gabriel--IMlv9Jlb24-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  margin: 0 auto;
+}
+
+#home {
+  background-image: url("./img/thomas-vimare-IZ01rjX0XQA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+#innerspan {
+color: rgba(62,95,138,255);
+display: inline !important;
+}
+
+#attività {
+  display: flex;
+  flex-direction: column;
+  height: 400;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+}
+
+h2 {
+  padding-bottom: 0;
+}
+
+#attività p {
+  color: rgb(0, 0, 0);
+}
+
+.spanemph {
+  color: rgb(255, 157, 44);
+  font-weight: 800;
+}
+
+#festa p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+img {
+  height: 150px;
+  margin: 0 auto;
+  width: 400px;
+  object-fit: fill;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer h2 {
+  color: rgb(0, 0, 0);
+}
+
+footer p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .contheader {
+    height: 130px;
+  }
+
+  #chisono h2 {
+    font-size: 1.7rem;
+  }
+
+  #chisono div > p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  #chisono {
+    background-position: 50% 15%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  header ul {
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  header ul li:first-of-type {
+    padding-left: 20px;
+  }
+
+  #chisono {
+    padding-top: 150px;
+  }
+
+  img {
+    height: 150px;
+    margin: 0 auto;
+    width: 300px;
+    object-fit: fill;
+  }
+}
+
